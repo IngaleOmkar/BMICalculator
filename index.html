@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <title>BMI Calculator</title>
+    </head>
+    <body>
+
+        <div id="myModal" class="modal">
+
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p id="BMIValue"></p>
+            </div>
+          
+        </div>
+
+        <div class="topnav">
+            <a class="active" href="#">Calculator</a>
+            <a href="#">GitHub Repository</a>
+        </div>
+
+        <div>
+            <h1 style="text-align: center;">
+                BMI Calculator
+            </h1>
+        </div>
+
+        <div>
+            <div class="split left" style="border:1px solid black;">
+                <div class="centered">
+                    <div style="padding-top: 10%; padding-bottom: 10%;">
+                        <label>Weight (in Kgs)</label>
+                        <input type="number" id="weight" placeholder="70">
+                    </div>
+
+                    <div style="padding-top: 10%; padding-bottom: 10%;">
+                        <label>Height (in cms)</label>
+                        <input type="number" id="height" placeholder="150">
+                    </div>
+
+                    <button onclick="calculateBMI()" id="myBtn">Calculate BMI</button>
+                    
+                </div>
+
+                
+                
+            </div>
+              
+            <div class="split right" style="border:1px solid black;">
+                <div class="centered">
+                    <table>
+                        <tr>
+                          <th>Category</th>
+                          <th>BMI range - kg/m2</th>
+                        </tr>
+                        <tr>
+                          <td>Severe Thinness</td>
+                          <td>< 16</td>
+                        </tr>
+                        <tr>
+                          <td>Moderate Thinness</td>
+                          <td>16 - 17</td>
+                        </tr>
+                        <tr>
+                          <td>Mild Thinness</td>
+                          <td>17 - 18.5</td>
+                        </tr>
+                        <tr>
+                          <td>Normal</td>
+                          <td>18.5 - 25</td>
+                        </tr>
+                        <tr>
+                          <td>Overweight</td>
+                          <td>25 - 30</td>
+                        </tr>
+                        <tr>
+                          <td>Obese Class I</td>
+                          <td>30 - 35</td>
+                        </tr>
+                        <tr>
+                            <td>Obese Class II</td>
+                            <td>35 - 40</td>
+                        </tr>
+                        <tr>
+                            <td>Obese Class III</td>
+                            <td>> 40</td>
+                        </tr>
+                      </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Two input boxes for height and weight -->
+
+
+        <div class="footer">
+            <p>&copy; Omkar Ingale</p>
+        </div>
+
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
