@@ -1,4 +1,6 @@
 # BMICalculator
+The website: https://ingaleomkar.github.io/BMICalculator/
+
 This project was developed to help people calculate their BMI (Body mass index).
 
 To do so, the users need to input two values:
